@@ -1,0 +1,28 @@
+.mainSwiper {
+  overflow: hidden;
+}
+.mainSwiper .wrapper {
+  display: flex;
+}
+.mainSwiper .swiper-slide img {
+  margin-top: 80px;
+  width: 100%;
+  height: 71vmin;
+  object-fit: cover;
+}
+.mainSwiper .swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.3;
+  color: #2f4cda;
+  transition: all 0.3s ease;
+}
+.mainSwiper .swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  color: #2f4cda;
+}
+@media only screen and (min-width: 1200px) {
+  .mainSwiper .swiper-slide img {
+    margin-top: 93.63px;
+  }
+}

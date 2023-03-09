@@ -1,0 +1,32 @@
+* {
+    scroll-behavior: smooth;
+}
+
+#progress{
+    background-color: #DC3545 !important;
+    position: fixed;
+    bottom: 45px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1;
+}
+#progressValue{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #001a2e;
+    
+}

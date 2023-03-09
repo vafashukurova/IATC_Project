@@ -1,0 +1,148 @@
+.swiperTeachers {
+    width: 950px;
+}
+.cardTeachers {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 50px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.cardTeachers::before {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: #192459;
+    border-radius: 20px 20px 0 0;
+}
+.cardTeachers .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+    position: relative;
+    z-index: 100;
+}
+section .cardTeachers .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #192459;
+}
+section .cardTeachers .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.cardTeachers .media-icons {
+    width: 110px;
+    bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardTeachers .media-icons i {
+    font-size: 25px;
+    color: #192459;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.cardTeachers .media-icons i:hover {
+    opacity: 1;
+}
+.cardTeachers .name-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #192459;
+}
+.name-profession .name, .surName {
+    font-size: 20px;
+    font-weight: 600;
+}
+.name-profession .profession {
+    font-size: 15px;
+    font-weight: 500;
+}
+.cardTeachers .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.cardTeachers .rating i {
+    font-size: 18px;
+    margin: 0 2px;
+    color: #192459;
+}
+.cardTeachers .button {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.cardTeachers .button button {
+    background: #192459;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.carusel-sectionTeachers .button button:hover {
+    background: #192459;
+}
+.carusel-sectionTeachers .swiper-pagination {
+    position: absolute;
+}
+.carusel-sectionTeachers .swiper-pagination-bullet {
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: #192459;
+}
+.carusel-sectionTeachers .swiper-button-next, .swiper-button-prev {
+    opacity: 0.7;
+    color: #757c9b;
+    transition: all 0.3s ease;
+}
+.carusel-sectionTeachers .swiper-button-next:hover, .swiper-button-prev:hover {
+    opacity: 1;
+    color: #192459;
+}
+
+@media screen and (max-width: 1440px) {
+    .swiper{
+      width: 960px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+      .swiper{
+        width: 800px;
+      }
+  }
+  @media screen and (max-width: 960px) {
+    .swiper{
+      width: 750px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+      .swiper{
+        width: 520px;
+      }
+  }
+  @media screen and (max-width: 640px) {
+      .swiper{
+        width: 280px;
+      }  
+  }
+  

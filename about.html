@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/carusel.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="./assets/scroll.css">
+    <script src="scroll.js"></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar" id="nav">
+        <div class="container">
+            <a href="./index.html"><img src="./assets/img/logo_main.png" alt="IACT_logo" class="logo"> </a>
+            <ul class="nav-links">
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="section-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title">
+                        Haqqımızda
+                    </h1>
+                    <div class="little-title">
+                        <ul class="item-links">
+                            <li><a href="index.html">Ana səhifə </a></li>
+                            <li><a href="">Haqqımızda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-item">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-img">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-item">
+                        <span>Haqqımızda</span>
+                        <h2>Komanda Üzvləri</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row carusel-section carusel-sectionTeachers">
+                <div class="col-lg-12">
+                    <div class="swiper mySwiper container swiperTeachers">
+                        <div id="content" class="swiper-wrapper content">
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="dark-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12" id="footer-text">
+                    <span>© 2022 Israil Azərbaycan Təlim Mərkəzi</span>
+                </div>
+                <div class="col-lg-6 col-md-12" id="footer-text">
+                    <ul class="footer-links">
+                        <li><a href="https://www.facebook.com/iatc.edu.az"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/iatceduaz/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/iatc-edu/"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="progress">
+            <span id="progressValue">&#x1F815;</span>
+        </div>
+    </footer>
+
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+     <!-- Initialize Swiper -->
+     <script>
+         var swiper = new Swiper(".swiperTeachers", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                1440: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                }
+            }
+        });
+     </script>
+
+<script type="module" src="./js/page.js"></script>
+<script type="module" src="./js/member.js"></script>
+<script type="module" src="./js/about.js"></script>
+</body>
+
+</html>
